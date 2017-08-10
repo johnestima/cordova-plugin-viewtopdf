@@ -1,1 +1,1 @@
-# cordova-plugin-viewtopdf
+# Cordova view to pdf plugin

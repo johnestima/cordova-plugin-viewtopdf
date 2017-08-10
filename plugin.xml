@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.esblock.viewtopdf" version="0.0.1">
+
+  <name>viewtopdf</name>
+
+  <platform name="ios">
+
+    <js-module src="www/viewtopdf.js" name="viewtopdf">
+        <runs/>
+        <clobbers target="viewtopdf" />
+    </js-module>
+    
+    <config-file target="config.xml" parent="/*">
+      <feature name="Hello">
+        <param name="ios-package" value="HWPHello" onload="true"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/HWPHello.h"/>
+    <source-file src="src/ios/HWPHello.m"/>
+  </platform>
+
+</plugin>
