@@ -1,23 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.esblock.viewtopdf" version="0.0.1">
-
-  <name>viewtopdf</name>
-
-  <platform name="ios">
-
-    <js-module src="www/viewtopdf.js" name="viewtopdf">
-        <runs/>
-        <clobbers target="viewtopdf" />
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-esblock-plugins-viewtopdf" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>viewtopdf</name>
+    <js-module name="viewtopdf" src="www/viewtopdf.js">
+        <clobbers target="cordova.plugins.viewtopdf" />
     </js-module>
-    
-    <config-file target="config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" onload="true"/>
-      </feature>
-    </config-file>
 
-    <header-file src="src/ios/HWPHello.h"/>
-    <source-file src="src/ios/HWPHello.m"/>
-  </platform>
-
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="viewtopdf">
+            <param name="ios-package" value="viewtopdf" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/viewtopdf.h" />
+        <source-file src="src/ios/viewtopdf.m" />
+    </platform>
 </plugin>

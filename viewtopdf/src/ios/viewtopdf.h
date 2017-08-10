@@ -1,8 +1,8 @@
 #import <Cordova/CDV.h>
 
-@interface HWPHello : CDVPlugin
+@interface viewtopdf : CDVPlugin
 
-- (void)greet : (CDVInvokedUrlCommand*)command;
+- (void)topdf : (CDVInvokedUrlCommand*)command;
 
 @end
 

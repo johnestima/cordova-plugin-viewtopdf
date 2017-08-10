@@ -1,9 +1,9 @@
-#import "HWPHello.h"
+#import "viewtopdf.h"
 #define PDFSize CGSizeMake(595.2,841.8)
 
-@implementation HWPHello
+@implementation viewtopdf
 
-- (void)greet:(CDVInvokedUrlCommand*)command
+- (void)topdf:(CDVInvokedUrlCommand*)command
 {
 
     NSString* callbackId = [command callbackId];
